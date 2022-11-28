@@ -28,9 +28,11 @@ public class Review {
 
     }
 
-    public Review(Long id, String text) {
+    public Review(Long id, String text, User user, Movie movie) {
         this.id = id;
         this.text = text;
+        this.user = user;
+        this.movie = movie;
     }
 
     public Long getId() {
