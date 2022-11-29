@@ -4,7 +4,6 @@ import com.devsuperior.movieflix.dto.ReviewDTO;
 import com.devsuperior.movieflix.entities.Review;
 import com.devsuperior.movieflix.repositories.MovieRepository;
 import com.devsuperior.movieflix.repositories.ReviewRepository;
-import com.devsuperior.movieflix.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -29,9 +28,4 @@ public class ReviewServices {
         entity.setUser(authService.authenticated());
         return new ReviewDTO(reviewRepository.save(entity));
     }
-
-//    public Review DtoToEntity(ReviewDTO reviewDTO){
-//        Review entity = new Review();
-//        entity.setId(reviewDTO.);
-//    }
 }

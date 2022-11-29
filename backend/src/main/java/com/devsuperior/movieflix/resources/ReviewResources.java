@@ -1,7 +1,6 @@
 package com.devsuperior.movieflix.resources;
 
 import com.devsuperior.movieflix.dto.ReviewDTO;
-import com.devsuperior.movieflix.entities.Review;
 import com.devsuperior.movieflix.services.ReviewServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
